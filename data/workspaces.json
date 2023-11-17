@@ -1,0 +1,822 @@
+[
+    {
+        "info": {
+            "title": "Petitions",
+            "description": "the voting system, but reworked to make it more accessible",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "register_slash_commands",
+                "info": {
+                    "x": 131,
+                    "y": 98,
+                    "z": 3,
+                    "color": "#5a5a5a",
+                    "height": 433,
+                    "width": 648
+                },
+                "options": {
+                    "text": "{\n  \"name\": \"petition\",\n  \"description\": \"The official way to suggest your idea for this server.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"your-idea\",\n      \"description\": \"Your suggestion to make the server better.\",\n      \"required\": true\n    }\n  ]\n}"
+                },
+                "inputs": {},
+                "outputs": {}
+            },
+            {
+                "name": "interaction_event",
+                "info": {
+                    "x": 856,
+                    "y": 101,
+                    "z": 4,
+                    "color": "#5a5a5a",
+                    "height": 465,
+                    "width": 579
+                },
+                "inputs": {
+                    "id": "kB1ZL3Zmcp",
+                    "sub": "Hd6dkBO1dU",
+                    "group": "kcgKlRUoGF",
+                    "value": "O8fnhCoydZ"
+                },
+                "options": {
+                    "type": "slash",
+                    "id": "petition",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "X1n6DxrwoY"
+                    ],
+                    "user": [],
+                    "member": [
+                        "2QiJNx0nQk"
+                    ],
+                    "server": [],
+                    "channel": [],
+                    "message": [],
+                    "interaction": [
+                        "auA4xQObhE",
+                        "wuWvqAa6Iu"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                }
+            },
+            {
+                "name": "get_interaction_argument_by_name",
+                "info": {
+                    "x": 1530,
+                    "y": 106,
+                    "z": 5,
+                    "color": "#5a5a5a",
+                    "height": 172,
+                    "width": 487
+                },
+                "inputs": {
+                    "action": "X1n6DxrwoY",
+                    "interaction": "auA4xQObhE",
+                    "name": "WQCKR5dKt9"
+                },
+                "options": {
+                    "name": "your-idea",
+                    "get": "string"
+                },
+                "outputs": {
+                    "action": [
+                        "AbvA7NGSmK"
+                    ],
+                    "output": [
+                        "NG6ySWSuAb"
+                    ]
+                }
+            },
+            {
+                "name": "merge_text_advanced_10x",
+                "info": {
+                    "x": 2145,
+                    "y": 102,
+                    "z": 7,
+                    "color": "#5a5a5a",
+                    "height": 392,
+                    "width": 423
+                },
+                "inputs": {
+                    "action": "4EcCTDyPv5",
+                    "text1": "BQISf3LNi6",
+                    "text2": "NG6ySWSuAb",
+                    "text3": "TokLRmntSq",
+                    "text4": "acMr40jwz8",
+                    "text5": "QtH281Bu32",
+                    "text6": "QBfLwCJ5yJ",
+                    "text7": "nIcgbbQdzW",
+                    "text8": "8Ts68g2uPM",
+                    "text9": "WWy2dglpYW",
+                    "text10": "uTT66bTs4D"
+                },
+                "options": {
+                    "text": "## PETITION BY <@${text1}>:\n${text2}\n\nThis feature is in development. Contact <@526214948674600990> for any issues."
+                },
+                "outputs": {
+                    "action": [
+                        "hZxGz6dp9C"
+                    ],
+                    "text": [
+                        "6YPev5LMvh",
+                        "gH2RHn75lM"
+                    ]
+                }
+            },
+            {
+                "name": "get_member_info",
+                "info": {
+                    "x": 1531,
+                    "y": 324,
+                    "z": 8,
+                    "color": "#5a5a5a",
+                    "height": 113,
+                    "width": 565
+                },
+                "inputs": {
+                    "action": "AbvA7NGSmK",
+                    "member": "2QiJNx0nQk"
+                },
+                "options": {
+                    "member_info": "11"
+                },
+                "outputs": {
+                    "action": [
+                        "4EcCTDyPv5"
+                    ],
+                    "result": [
+                        "BQISf3LNi6"
+                    ]
+                }
+            },
+            {
+                "name": "create_button",
+                "info": {
+                    "x": 2688,
+                    "y": 118,
+                    "z": 9,
+                    "color": "#5a5a5a",
+                    "height": 360,
+                    "width": 485
+                },
+                "inputs": {
+                    "action": "hZxGz6dp9C",
+                    "styles": "UXbtQasCPR",
+                    "label": "6IirXxIJde",
+                    "emoji": "6RuNjheVxx",
+                    "id": "Bm5x48Oxdn",
+                    "enable": "fYz9zAhFy7"
+                },
+                "options": {
+                    "styles": "success",
+                    "label": "SIGN",
+                    "emoji": "",
+                    "id": "sign-petition",
+                    "enable": "enabled"
+                },
+                "outputs": {
+                    "action": [
+                        "W6Osqt5qc8"
+                    ],
+                    "button": [
+                        "NcJbuIsvsD"
+                    ]
+                }
+            },
+            {
+                "name": "interaction_send_reply_fixed",
+                "info": {
+                    "x": 3235,
+                    "y": 153,
+                    "z": 10,
+                    "color": "#5a5a5a",
+                    "height": 299,
+                    "width": 400
+                },
+                "inputs": {
+                    "action": "W6Osqt5qc8",
+                    "interactreply": "wuWvqAa6Iu",
+                    "message": "6YPev5LMvh",
+                    "embeds": "V8psovZhf9",
+                    "menu": "sKKnZQkE3x",
+                    "button_row": "pJKJYwCjSv",
+                    "button": "NcJbuIsvsD",
+                    "file": "bc1iXDmYGt"
+                },
+                "options": {
+                    "private": "false"
+                },
+                "outputs": {
+                    "action": [
+                        "mwfmtUclHR"
+                    ],
+                    "message": [
+                        "e2AjYf3wAa"
+                    ]
+                }
+            },
+            {
+                "name": "control_variable",
+                "info": {
+                    "x": 4952,
+                    "y": 146,
+                    "z": 11,
+                    "color": "#5a5a5a",
+                    "height": 213,
+                    "width": 493
+                },
+                "inputs": {
+                    "action": "fvUAB3X8sz",
+                    "name": "GD31IxZNdG",
+                    "value": "Syuo8X1fXZ",
+                    "workspace_index": "6n0hohwDQX"
+                },
+                "options": {
+                    "action_type": "set",
+                    "variable_type": "global",
+                    "variable_restriction_type": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "rT5wkUIKHF"
+                    ]
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "info": {
+                    "x": 4413,
+                    "y": 134,
+                    "z": 12,
+                    "color": "#5a5a5a",
+                    "height": 175,
+                    "width": 470
+                },
+                "inputs": {
+                    "action": "kiyeadUVIk",
+                    "text1": "qkR2v37iL9",
+                    "text2": "KwSUUzS8fP",
+                    "text3": "2bPkzJuMcT"
+                },
+                "options": {
+                    "text": "petition-${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "WOKSXOzkiw"
+                    ],
+                    "text": [
+                        "GD31IxZNdG"
+                    ]
+                }
+            },
+            {
+                "name": "get_message_info",
+                "info": {
+                    "x": 3702,
+                    "y": 234,
+                    "z": 15,
+                    "color": "#5a5a5a",
+                    "height": 113,
+                    "width": 653
+                },
+                "inputs": {
+                    "action": "mwfmtUclHR",
+                    "message": "e2AjYf3wAa"
+                },
+                "options": {
+                    "message_info": "15"
+                },
+                "outputs": {
+                    "action": [
+                        "kiyeadUVIk"
+                    ],
+                    "result": [
+                        "qkR2v37iL9",
+                        "hQBwo7MSjz"
+                    ]
+                }
+            },
+            {
+                "name": "number",
+                "info": {
+                    "x": 5017,
+                    "y": 409,
+                    "z": 16,
+                    "color": "#5a5a5a",
+                    "height": 107,
+                    "width": 343
+                },
+                "options": {
+                    "number": "0"
+                },
+                "outputs": {
+                    "number": [
+                        "Syuo8X1fXZ"
+                    ]
+                },
+                "inputs": {}
+            },
+            {
+                "name": "interaction_event",
+                "info": {
+                    "x": 3405,
+                    "y": 755,
+                    "z": 20,
+                    "color": "#5a5a5a",
+                    "height": 465,
+                    "width": 579
+                },
+                "inputs": {
+                    "id": "TKXjBKL1Rk",
+                    "sub": "CPJwtxZ4mz",
+                    "group": "Uh8VtnySwR",
+                    "value": "H4uOXAENt6"
+                },
+                "options": {
+                    "type": "button",
+                    "id": "sign-petition",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "wXtHH6jPUx"
+                    ],
+                    "user": [],
+                    "member": [
+                        "hMroUf1WgT"
+                    ],
+                    "server": [],
+                    "channel": [],
+                    "message": [
+                        "ij1DOnhVzS",
+                        "YTdysfGhUu",
+                        "KyvgIhauu7"
+                    ],
+                    "interaction": [],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "info": {
+                    "x": 5745,
+                    "y": 599,
+                    "z": 22,
+                    "color": "#5a5a5a",
+                    "height": 175,
+                    "width": 418
+                },
+                "inputs": {
+                    "action": "dxHJ9iaxMI",
+                    "text1": "iC7Q5iTGEk",
+                    "text2": "tG5jmRfYjY",
+                    "text3": "fDpeNbXE4j"
+                },
+                "options": {
+                    "text": "${text1}\n\n__${text2} signatures__"
+                },
+                "outputs": {
+                    "action": [
+                        "Yh05430yV1"
+                    ],
+                    "text": [
+                        "YrL9qUf8Pj"
+                    ]
+                }
+            },
+            {
+                "name": "edit_message",
+                "info": {
+                    "x": 6246,
+                    "y": 597,
+                    "z": 24,
+                    "color": "#5a5a5a",
+                    "height": 196,
+                    "width": 276
+                },
+                "inputs": {
+                    "action": "Yh05430yV1",
+                    "message": "YTdysfGhUu",
+                    "message_text": "YrL9qUf8Pj",
+                    "message_embed": "oa55aoSnZI"
+                },
+                "outputs": {
+                    "action": [
+                        "LMHERHVG9g"
+                    ]
+                },
+                "options": {}
+            },
+            {
+                "name": "math_operations",
+                "info": {
+                    "x": 6627,
+                    "y": 910,
+                    "z": 25,
+                    "color": "#5a5a5a",
+                    "height": 165,
+                    "width": 484
+                },
+                "inputs": {
+                    "action": "8HChXVSZPl",
+                    "number1": "889T4xKOSX",
+                    "number2": "RivvgKWpLK"
+                },
+                "options": {
+                    "math_operation_type": "addition",
+                    "number2": ""
+                },
+                "outputs": {
+                    "action": [
+                        "gI7mbKt4hg"
+                    ],
+                    "number": [
+                        "O2uymig1U3",
+                        "2lEDgIgmnI"
+                    ]
+                }
+            },
+            {
+                "name": "get_variable",
+                "info": {
+                    "x": 6089,
+                    "y": 894,
+                    "z": 26,
+                    "color": "#5a5a5a",
+                    "height": 165,
+                    "width": 493
+                },
+                "inputs": {
+                    "action": "SiHVzhaSig",
+                    "name": "m8WJSjrMVc",
+                    "workspace_index": "DcCIyZlnvU"
+                },
+                "options": {
+                    "variable_type": "global",
+                    "variable_restriction_type": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "8HChXVSZPl"
+                    ],
+                    "value": [
+                        "889T4xKOSX"
+                    ]
+                }
+            },
+            {
+                "name": "get_message_info",
+                "info": {
+                    "x": 5050,
+                    "y": 694,
+                    "z": 27,
+                    "color": "#5a5a5a",
+                    "height": 113,
+                    "width": 653
+                },
+                "inputs": {
+                    "action": "Wk0nyM4eJ2",
+                    "message": "ij1DOnhVzS"
+                },
+                "options": {
+                    "message_info": "15"
+                },
+                "outputs": {
+                    "action": [
+                        "u3Mgl7LRLE"
+                    ],
+                    "result": [
+                        "mD2VxToG8J",
+                        "8T5yZr40ha"
+                    ]
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "info": {
+                    "x": 5571,
+                    "y": 834,
+                    "z": 28,
+                    "color": "#5a5a5a",
+                    "height": 175,
+                    "width": 418
+                },
+                "inputs": {
+                    "action": "u3Mgl7LRLE",
+                    "text1": "mD2VxToG8J",
+                    "text2": "gCwJZioPqq",
+                    "text3": "epQC40WBXm"
+                },
+                "options": {
+                    "text": "petition-${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "lOQVWMEYLH"
+                    ],
+                    "text": [
+                        "m8WJSjrMVc",
+                        "IUPqPHY1uc"
+                    ]
+                }
+            },
+            {
+                "name": "number",
+                "info": {
+                    "x": 6698,
+                    "y": 1095,
+                    "z": 29,
+                    "color": "#5a5a5a",
+                    "height": 107,
+                    "width": 343
+                },
+                "options": {
+                    "number": "1"
+                },
+                "outputs": {
+                    "number": [
+                        "RivvgKWpLK"
+                    ]
+                },
+                "inputs": {}
+            },
+            {
+                "name": "transform_value",
+                "info": {
+                    "x": 7762,
+                    "y": 1002,
+                    "z": 30,
+                    "color": "#5a5a5a",
+                    "height": 113,
+                    "width": 491
+                },
+                "inputs": {
+                    "action": "zDRTbcFZD1",
+                    "value": "O2uymig1U3"
+                },
+                "options": {
+                    "transformation_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "69PMaYIj3v"
+                    ],
+                    "result": [
+                        "tG5jmRfYjY"
+                    ]
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "info": {
+                    "x": 4431,
+                    "y": 329,
+                    "z": 31,
+                    "color": "#5a5a5a",
+                    "height": 175,
+                    "width": 418
+                },
+                "inputs": {
+                    "action": "WOKSXOzkiw",
+                    "text1": "hQBwo7MSjz",
+                    "text2": "46bPv9lkAc",
+                    "text3": "dTBGhlxiLw"
+                },
+                "options": {
+                    "text": "petition-${text1}-message"
+                },
+                "outputs": {
+                    "action": [
+                        "fvUAB3X8sz"
+                    ],
+                    "text": [
+                        "DyhUFY7487"
+                    ]
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "info": {
+                    "x": 5563,
+                    "y": 1043,
+                    "z": 32,
+                    "color": "#5a5a5a",
+                    "height": 175,
+                    "width": 418
+                },
+                "inputs": {
+                    "action": "lOQVWMEYLH",
+                    "text1": "8T5yZr40ha",
+                    "text2": "UuODfkD33w",
+                    "text3": "QGlZm4W21y"
+                },
+                "options": {
+                    "text": "petition-${text1}-message"
+                },
+                "outputs": {
+                    "action": [
+                        "SiHVzhaSig"
+                    ],
+                    "text": [
+                        "Hl3M0qb5If"
+                    ]
+                }
+            },
+            {
+                "name": "control_variable",
+                "info": {
+                    "x": 5530,
+                    "y": 161,
+                    "z": 33,
+                    "color": "#5a5a5a",
+                    "height": 213,
+                    "width": 493
+                },
+                "inputs": {
+                    "action": "rT5wkUIKHF",
+                    "name": "DyhUFY7487",
+                    "value": "gH2RHn75lM",
+                    "workspace_index": "Zg54LUvxvL"
+                },
+                "options": {
+                    "action_type": "set",
+                    "variable_type": "global",
+                    "variable_restriction_type": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "PVrJfkeXy6"
+                    ]
+                }
+            },
+            {
+                "name": "get_variable",
+                "info": {
+                    "x": 6054,
+                    "y": 1291,
+                    "z": 34,
+                    "color": "#5a5a5a",
+                    "height": 165,
+                    "width": 493
+                },
+                "inputs": {
+                    "action": "69PMaYIj3v",
+                    "name": "Hl3M0qb5If",
+                    "workspace_index": "KSb7qN87Mg"
+                },
+                "options": {
+                    "variable_type": "global",
+                    "variable_restriction_type": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "dxHJ9iaxMI"
+                    ],
+                    "value": [
+                        "iC7Q5iTGEk"
+                    ]
+                }
+            },
+            {
+                "name": "control_variable",
+                "info": {
+                    "x": 7187,
+                    "y": 927,
+                    "z": 35,
+                    "color": "#5a5a5a",
+                    "height": 213,
+                    "width": 493
+                },
+                "inputs": {
+                    "action": "gI7mbKt4hg",
+                    "name": "IUPqPHY1uc",
+                    "value": "2lEDgIgmnI",
+                    "workspace_index": "zFYYF2s76X"
+                },
+                "options": {
+                    "action_type": "set",
+                    "variable_type": "global",
+                    "variable_restriction_type": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "zDRTbcFZD1"
+                    ]
+                }
+            },
+            {
+                "name": "get_list_item_position",
+                "info": {
+                    "x": 4173,
+                    "y": 740,
+                    "z": 36,
+                    "color": "#5a5a5a",
+                    "height": 175,
+                    "width": 281
+                },
+                "inputs": {
+                    "action": "wXtHH6jPUx",
+                    "list": "M2lQuDDBdy",
+                    "item": "hMroUf1WgT",
+                    "start_at": "u6Uk6Pm6xM"
+                },
+                "outputs": {
+                    "action": [],
+                    "position": []
+                },
+                "options": {}
+            },
+            {
+                "name": "create_list",
+                "info": {
+                    "x": 6138,
+                    "y": 212,
+                    "z": 37,
+                    "color": "#5a5a5a",
+                    "height": 113,
+                    "width": 211
+                },
+                "inputs": {
+                    "action": "PVrJfkeXy6"
+                },
+                "outputs": {
+                    "action": [],
+                    "list": [
+                        "QtLBejBMaf",
+                        "M2lQuDDBdy"
+                    ]
+                },
+                "options": {}
+            },
+            {
+                "name": "add_item_to_list",
+                "info": {
+                    "x": 6611,
+                    "y": 607,
+                    "z": 38,
+                    "color": "#5a5a5a",
+                    "height": 196,
+                    "width": 443
+                },
+                "inputs": {
+                    "action": "LMHERHVG9g",
+                    "list": "QtLBejBMaf",
+                    "item": "KyvgIhauu7",
+                    "custom_position": "1RvpWahAlF"
+                },
+                "options": {
+                    "position_type": "first"
+                },
+                "outputs": {
+                    "action": [],
+                    "list": []
+                }
+            },
+            {
+                "name": "create_list_advanced",
+                "info": {
+                    "x": 4824,
+                    "y": 1056,
+                    "z": 39,
+                    "color": "#5a5a5a",
+                    "height": 320,
+                    "width": 490
+                },
+                "inputs": {
+                    "action": "qikb1iWqsN",
+                    "list": "Hyi6huYyEh",
+                    "item1": "eBgTv9mS0C",
+                    "item2": "Mi4898HAU6",
+                    "item3": "3R7MGM6x15",
+                    "item4": "9HRVevQWYk",
+                    "item5": "wtE5WtKeT5",
+                    "custom_position": "ojaaiX5HD7"
+                },
+                "options": {
+                    "position_type": "first",
+                    "custom_position": ""
+                },
+                "outputs": {
+                    "action": [],
+                    "list": []
+                }
+            }
+        ],
+        "notes": []
+    }
+]

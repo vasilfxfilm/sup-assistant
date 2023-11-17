@@ -1,0 +1,18 @@
+{
+    "dbb": {
+        "prefixes": {
+            "main": "sup!",
+            "servers": {}
+        },
+        "owners": []
+    },
+    "discord": {
+        "servers": {},
+        "members": {},
+        "users": {}
+    },
+    "blocks": {},
+    "custom": {
+        "LastMusicBlocksUpdate": "2023-11-12T02:09:51.263Z"
+    }
+}
